@@ -18,14 +18,19 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <akka.version>2.6.1</akka.version>
-        <akka-http.version>10.1.11</akka-http.version>
+        <akka.version>2.6.8</akka.version>
+        <akka-http.version>10.1.12</akka-http.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.typesafe.akka</groupId>
             <artifactId>akka-actor-typed_2.13</artifactId>
+            <version>${akka.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-cluster_2.13</artifactId>
             <version>${akka.version}</version>
         </dependency>
         <dependency>
